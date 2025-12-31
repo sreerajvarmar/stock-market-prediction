@@ -42,7 +42,7 @@ def predict_price(stock_symbol):
         
         print(f"✅ Predicted Price: {predicted_price}")  # Debug print
 
-        return predicted_price, data[-10:]
+        return predicted_price, scaler.inverse_transform(data[-10:]).flatten()
     except Exception as e:
         return None, str(e)
 
@@ -81,4 +81,5 @@ def predict():
     return render_template("result.html", stock=stock_symbol, predicted_price=price, plot_url=plot_url)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
+
