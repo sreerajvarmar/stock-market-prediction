@@ -47,6 +47,14 @@ http://127.0.0.1:5000/
 
 ---
 
+## Model Details
+- Model: LSTM (trained and saved)
+- Preprocessing: StandardScaler
+- Artifacts: `backend/lstm_model.h5`, `backend/scaler.pkl`
+
+## Screenshots
+Screenshots will be added soon.
+
 ## Note
 This project is created for learning and academic purposes only.
 It should not be used for real-world trading or investment decisions.
@@ -55,3 +63,4 @@ It should not be used for real-world trading or investment decisions.
 
 ## Author
 Sreeraj Varma
+
